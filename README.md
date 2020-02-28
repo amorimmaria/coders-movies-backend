@@ -23,7 +23,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 * [NodeJS](https://skylab.rocketseat.com.br/node/curso-node-js)
 
-* [Vuetify](https://vuetifyjs.com/en/getting-started/quick-start)
+* [Vuetify](https://v15.vuetifyjs.com/pt-BR/getting-started/quick-start)
 
 ---
 
