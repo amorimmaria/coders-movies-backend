@@ -23,3 +23,23 @@ link: https://docs.google.com/document/d/1y744_ZAaudbTivd6sCJFHq2XgyMQZfAloNOTnk
 
 
 ## Lista de Requisitos Não-Funcionais
+
+## Perfis de Usuários
+
+## Riscos
+
+|Data| Risco| Prioridade| Responsável| Status | Providência/Solução|
+|:--:|:-----|:---------:|:----------:|:-------|:-------------------|
+27/02/2020| Não aprendizado das ferramentas utilizadas pelos componentes do grupo a tempo|Alto|Todos|Vigente |Reforçar estudos sobre as ferramentas e aulas com o integrante que conhece a ferramenta
+|27/02/2020|Desistência de um dos integrantes por motivos de trabalho|Alto|Gerente|Vigente|Replanejar  o cronograma com base nas tarefas que ainda falta e realocar para os outros componentes|
+|27/02/2020|Ausência de componente por motivo de trabalho|Alto|Gerente|Vigente|Realizar reuniões virtuais|
+|27/02/2020|Encontrar dificuldades para aprender uma nova tecnologia em um curto período de tempo|Alto|Todos|Vigente|Encontros presenciais com aula de quem domina a tecnologia e cursos online|
+|28/02/2020|Componentes utilizando sistemas operacionais diferentes|Médio|Todos|Resolvido|Todas as ferramentas que serão utilizadas, foi instalada  em ambos os sistemas operacionais|
+|28/02/2020|Pode ocorrer de não entregarmos o software|Médio|Todos|Vigente|Encontros presenciais e virtuais com mais frequência e ritmo de desenvolvimento mais intenso para que todos consiga entregar o software|
+
+
+
+
+
+
+
