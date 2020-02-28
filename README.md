@@ -17,4 +17,14 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
+## Links
+
+* [Curso de JavaScript Moderno do básico ao avançado 2020](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/16337648#overview)
+
+* [Curso JavaScript ES6](https://skylab.rocketseat.com.br/node/curso-java-script-es-6)
+
+* [NodeJS](https://skylab.rocketseat.com.br/node/curso-node-js)
+
+* [Vuetify](https://vuetifyjs.com/en/getting-started/quick-start)
+
 Criado com ♥ by Coders
