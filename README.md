@@ -1,5 +1,5 @@
 # Coders Movies
-Aplicação web de gerenciamento de filmes e séries
+Aplicação web de gerenciamento de filmes e séries.
 
 ## Sobre o projeto
 
