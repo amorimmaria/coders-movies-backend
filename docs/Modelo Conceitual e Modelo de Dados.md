@@ -48,10 +48,10 @@ Este documento descreve o modelo conceitual do software e é composto por um con
 
 ### **Histórico de Revisões**
 
-| Data       | Versão | Descrição                         | Autor                           |
-| :--------- | :----: | :-------------------------------- | :------------------------------ |
-| 28/03/2020 |  1.0   | Template e descrição do documento | José Geraldo de Medeiros Júnior |
-| 28/03/2020 |   -    | -                                 | -                               |
+| Data       | Versão | Descrição                                                              | Autor                           |
+| :--------- | :----: | :--------------------------------------------------------------------- | :------------------------------ |
+| 28/03/2020 |  1.0   | Template e descrição do documento; resumo do modelo de dados utilizado | José Geraldo de Medeiros Júnior |
+| 28/03/2020 |   -    | -                                                                      | -                               |
 
 [Topo](#sumario)
 
@@ -73,6 +73,9 @@ Descrição sucinta das entidades presentes no sistema.
 
 ## Modelo de Dados
 
+Este projeto usará o banco de dados relacional - SQL. Com isso esperamos dados fortemente íntegros e que respeite o conceito de ACID: _Atomicidade_ exige que a transação como um todo seja executada com êxito ou, caso parte da transação falhe, que a transação inteira seja invalidada. _Consistência_ determina que os dados gravados no banco de dados como parte da transação e devem aderir a todas as regras definidas, e restrições incluindo constraints, cascades e triggers. _Isolamento_ é essencial para conquistar controle da concomitância e garante que cada transação seja independente por si só. _Durabilidade_ estabelece que todas as alterações feitas ao banco de dados sejam permanentes depois que a transação for concluída com êxito.  
+Além disso será usado o SGBD PostgreSQL, um poderoso gerenciador de banco de dados realcional que tem ampla credibilidade no mercado. Ele é portável em alguns sistemas operacionais como Windows e diversas distribuções Linux, além disso, dá suporte ao mapeamento objeto-relacional - ORM (sigla em inglês), podendo ser usado para trabalhar com linguagens orientadas a objetos sem problemas.
+
 [Topo](#sumario)
 
 <div id='dicionario'/>
@@ -86,6 +89,9 @@ Geralmente uma tabela que descreve os limites e restrições de cada atributo/ca
 <div id='referencias'/>
 
 ## Referências
+
+O que é banco de dados relacional?. **AWS**. Disponível em: <<https://aws.amazon.com/pt/relational-database/>>. Acesso em: 28 de fev de 2020.  
+Ferramentas para o PostgreSQL. **PostgreSQL Wiki**, 2018. Disponível em: <<https://wiki.postgresql.org/wiki/Ferramentas_para_o_PostgreSQL>>. Acesso em: 28 de fev de 2020.
 
 (coloque aqui, artigos, livros e sites utilizados e citados no documento)
 
