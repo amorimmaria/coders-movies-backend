@@ -50,8 +50,8 @@ Este documento descreve o modelo conceitual do software e é composto por um con
 
 | Data       | Versão | Descrição                                                              | Autor                           |
 | :--------- | :----: | :--------------------------------------------------------------------- | :------------------------------ |
-| 28/03/2020 |  1.0   | Template e descrição do documento; resumo do modelo de dados utilizado | José Geraldo de Medeiros Júnior |
-| 28/03/2020 |   -    | -                                                                      | -                               |
+| 28/02/2020 |  1.0   | Template e descrição do documento; resumo do modelo de dados utilizado | José Geraldo de Medeiros Júnior |
+| 28/02/2020 |   -    | -                                                                      | -                               |
 
 [Topo](#sumario)
 
