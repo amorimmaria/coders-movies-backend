@@ -59,6 +59,8 @@ Este documento descreve o modelo conceitual do software e é composto por um con
 
 ## Modelo Conceitual
 
+![nome alternativo](https://raw.githubusercontent.com/pedrojonassm/PhotosToProjects/master/figures/Classe%20Coders.png)
+
 [Topo](#sumario)
 
 <div id='entidades'/>
@@ -82,7 +84,7 @@ Além disso será usado o SGBD PostgreSQL, um poderoso gerenciador de banco de d
 
 ## Dicionário de Dados
 
-Geralmente uma tabela que descreve os limites e restrições de cada atributo/campo das entidades persistidas (tabelas).
+![nome alternativo](https://raw.githubusercontent.com/pedrojonassm/PhotosToProjects/master/figures/ModeloMER.png)
 
 [Topo](#sumario)
 
