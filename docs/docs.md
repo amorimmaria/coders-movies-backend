@@ -6,5 +6,7 @@ A documentação completa do Coders Movies encontra-se concentrada nesta página
 
 O Documento de Visão completo pode ser encontrado na página [Documento de Visão](DocVisao.md).
 
+O Documento do [Modelo Conceitual e Modelo de Dados](ModeloConceitualeModelodeDados.md).
+
 ## Lista de User Stories
 
