@@ -1,8 +1,5 @@
 # Documento de Visão
 
-Documento construído a partido do **Coders Movies - Doc 001 - Documento de Visão** que pode ser encontrado no 
-link: https://docs.google.com/document/d/1y744_ZAaudbTivd6sCJFHq2XgyMQZfAloNOTnkd0OVU/edit#
-
 ## Lista de Requisitos Funcionais
 
 * CRUD de usuários pelo administrador;
