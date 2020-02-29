@@ -20,6 +20,15 @@
 
 # Documento de Visão
 
+## Introdução
+
+Este documento possui como objetivo definir e elencar as necessidades e características (requisitos) do sistema Coders Movies, assim como todos os elementos envolvidos em seu desenvolvimento e utilização, como perfis de usuário, tecnologias adotadas, riscos e dependências.
+
+O projeto Coders Movies é uma aplicação direcionada ao público cinéfilo, focada em armazenar e apresentar informações sobre filmes, séries e programas de TV. Através da realização de um cadastro, o usuário pode acessar diversas informações relacionadas aos conteúdos audiovisuais, como ficha-técnica, trailers, classificação (dada pelo IMDB e usuários do sistema) e resenhas.
+Possui diversas ferramentas, dentre elas: permitir ao utilizador não só marcar suas atrações favoritas, como também adicioná-las ao sistema; escolher atores, diretores e gêneros favoritos; marcar quais filmes e séries já assistidos; fazer resenhas e avaliações; personalizar seu perfil com seus favoritos marcados no sistema; as páginas de cada atração possuirão links para o acesso das mesmas nas plataformas de streaming (caso estejam disponíveis).
+Com isso, o sistema fará uso da API do Internet Movie Database (IMDB) para pegar as informações sobre as atrações e elencos, como também a avaliação dada para cada um pelo site.
+
+
 ## Lista de Requisitos Funcionais
 
 - CRUD de usuários pelo administrador;
@@ -46,6 +55,13 @@
 - O Banco de Dados utilizado deverá ser relacional, mais especificamente PostgreeSQL.
 
 ## Perfis de Usuários
+São dois os tipos de usuários do Coders Movies:
+
+Perfil Administrador
+No sistema, o administrador tem acesso ao CRUD de usuários, como também das páginas de filmes, séries, diretores e atores e moderar atividades de usuários.
+
+Perfil Usuário
+O usuário pode, criar um cadastro, personalizar seu perfil, com foto e biografia, adicionar página de filmes, séries, programas de TV, atores, diretores e etc., fazer resenhas e avaliações sobre atrações, favoritas atrações, atores e diretores, compartilhar atrações com os amigos.
 
 ## Riscos
 
