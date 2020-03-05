@@ -49,7 +49,7 @@ Com isso, o sistema fará uso da API do Internet Movie Database (IMDB) para pega
 
 ## Lista de Requisitos Não-Funcionais
 - Utilizando de API externa;
-- O sistema será desenvolvido na linguagem de programação Java com os frameworks Node.js e Vue.js;
+- O sistema será desenvolvido na linguagem de programação JavaScript com os frameworks Node.js e Vue.js;
 - O sistema deverá rodar no browser (aplicação web);
 - O software terá uma interface de fácil navegação, onde os usuários poderão utilizá-lo sem muitas dificuldades;
 - O Banco de Dados utilizado deverá ser relacional, mais especificamente PostgreeSQL.
