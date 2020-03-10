@@ -8,6 +8,8 @@ class UserController {
       email: Yup.string()
         .email()
         .required(),
+      username: Yup.string().required(),
+      birth_date: Yup.date().required(),
       password: Yup.string()
         .required()
         .min(6),
@@ -24,6 +26,8 @@ class UserController {
         .status(400)
         .json({ error: 'Usuário já existe na nossa base de dados' })
     }
+
+    Object.assign(req.body, { user_type: 'common' })
 
     const { id, name, email } = await User.create(req.body)
 
