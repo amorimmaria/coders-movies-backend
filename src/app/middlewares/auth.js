@@ -11,7 +11,7 @@ export default async (req, res, next) => {
     res.status(401).json({ error: 'Token não informado' })
   }
 
-  const [, token] = authHeader.split(' ')
+  const [, token] = authHeader.split(' ')
 
   try {
     const decoded = await promisify(jwt.verify)(token, authConfig.secret)
