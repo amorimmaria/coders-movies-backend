@@ -1,17 +1,24 @@
 import { Router } from 'express'
 
+import AdmUserController from './app/controllers/AdmUserController'
 import UserController from './app/controllers/UserController'
 import SessionController from './app/controllers/SessionController'
 
-import authMiddleware from './app/middlewares/auth'
+import authenticationMiddleware from './app/middlewares/authentication'
+import authorizationMiddleware from './app/middlewares/authorization'
 
 const routes = new Router()
 
 routes.post('/users', UserController.store)
+
 routes.post('/sessions', SessionController.store)
 
-routes.use(authMiddleware)
+routes.use(authenticationMiddleware)
 
 routes.put('/users', UserController.update)
+
+routes.use(authorizationMiddleware)
+
+routes.post('/admusers', AdmUserController.store)
 
 export default routes
