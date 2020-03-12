@@ -2,6 +2,29 @@ import * as Yup from 'yup'
 import User from '../models/User'
 
 class AdmUserController {
+  async index(req, res) {
+    /*
+     * list with pagination
+     */
+    const { page } = req.query
+
+    const users = await User.findAll({
+      attributes: [
+        'id',
+        'name',
+        'email',
+        'birth_date',
+        'user_type',
+        'username',
+      ],
+      order: [['created_at', 'DESC']],
+      limit: 20,
+      offset: (page - 1) * 20,
+    })
+
+    return res.json(users)
+  }
+
   async store(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
@@ -40,6 +63,14 @@ class AdmUserController {
         .json({ error: 'O username digitado já existe na nossa base de dados' })
     }
 
+    const { user_type } = req.body
+
+    if (user_type !== 'admin' && user_type !== 'common') {
+      return res.status(400).json({
+        error: 'O tipo de usuário selecionado não é permitido',
+      })
+    }
+
     const { id, name, email, username } = await User.create(req.body)
 
     return res.json({ id, name, username, email })
@@ -67,9 +98,10 @@ class AdmUserController {
       return res.status(400).json({ error: 'Dados inválidos' })
     }
 
-    const { email, oldPassword, username } = req.body
+    const { email, oldPassword, username, user_type } = req.body
 
     const user = await User.findByPk(req.params.id)
+    const admin = await User.findByPk(req.userId)
 
     if (!user) {
       return res.status(400).json({ error: 'Usuário não encontrado' })
@@ -99,6 +131,31 @@ class AdmUserController {
       return res.status(401).json({ error: 'Senha antiga inválida' })
     }
 
+    if (user_type && user_type !== 'admin' && user_type !== 'common') {
+      return res.status(400).json({
+        error: 'O tipo de usuário selecionado não é permitido',
+      })
+    }
+
+    const priorities = [
+      { user_type: 'superadmin', priority: 3 },
+      { user_type: 'admin', priority: 2 },
+      { user_type: 'common', priority: 1 },
+    ]
+    const userProperty = priorities.find(
+      userObj => userObj.user_type === user.user_type
+    )
+    const adminProperty = priorities.find(
+      userObj => userObj.user_type === admin.user_type
+    )
+
+    if (userProperty.priority > adminProperty.priority) {
+      return res.status(400).json({
+        error:
+          'Você não possui permissões necessárias para alterar o usuário selecionado',
+      })
+    }
+
     const { id, name } = await user.update(req.body)
 
     return res.json({ id, name, email, username })
@@ -106,9 +163,29 @@ class AdmUserController {
 
   async delete(req, res) {
     const user = await User.findByPk(req.params.id)
+    const admin = await User.findByPk(req.userId)
 
     if (!user) {
       return res.status(400).json({ error: 'Usuário não encontrado' })
+    }
+
+    const priorities = [
+      { user_type: 'superadmin', priority: 3 },
+      { user_type: 'admin', priority: 2 },
+      { user_type: 'common', priority: 1 },
+    ]
+    const userProperty = priorities.find(
+      ({ user_type }) => user_type === user.user_type
+    )
+    const adminProperty = priorities.find(
+      ({ user_type }) => user_type === admin.user_type
+    )
+
+    if (userProperty.priority > adminProperty.priority) {
+      return res.status(400).json({
+        error:
+          'Você não possui permissões necessárias para apagar o usuário selecionado',
+      })
     }
 
     await user.destroy()

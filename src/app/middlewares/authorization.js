@@ -22,7 +22,7 @@ export default async (req, res, next) => {
 
     const user = await User.findByPk(req.userId)
 
-    if (user.user_type !== 'admin') {
+    if (!user.user_type.includes('admin')) {
       throw new Error(
         'Você não possui permissões para acessar essa funcionalidade'
       )
