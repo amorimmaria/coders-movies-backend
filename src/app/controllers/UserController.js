@@ -39,6 +39,14 @@ class UserController {
         .json({ error: 'O username digitado já existe na nossa base de dados' })
     }
 
+    const { user_type } = req.body
+
+    if (user_type) {
+      return res.status(400).json({
+        error: 'Você não tem permissões para definir o tipo de usuário',
+      })
+    }
+
     Object.assign(req.body, { user_type: 'common' })
 
     const { id, name, email, username } = await User.create(req.body)
