@@ -20,5 +20,7 @@ routes.put('/users', UserController.update)
 routes.use(authorizationMiddleware)
 
 routes.post('/admusers', AdmUserController.store)
+routes.put('/admusers/:id', AdmUserController.update)
+routes.delete('/admusers/:id', AdmUserController.delete)
 
 export default routes
