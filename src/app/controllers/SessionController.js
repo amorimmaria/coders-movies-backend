@@ -30,7 +30,7 @@ class SessionController {
       return res.status(401).json({ error: 'A senha está incorreta' })
     }
 
-    const { id, name, username } = user
+    const { id, name, username, user_type } = user
 
     return res.json({
       user: {
@@ -38,6 +38,7 @@ class SessionController {
         name,
         email,
         username,
+        user_type,
       },
 
       token: jwt.sign({ id }, authConfig.secret, {
