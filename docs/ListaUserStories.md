@@ -47,25 +47,6 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 <div id='us'/>
 
 
-
-|User Story US01 - Manter Usuário|
-|:------------------------------:|
-| |
-
----
-title: Tables
-syntax-id: tables
-syntax-summary:
----
-
-```
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-```
-
-
 <div id='us01'/>
 
 
