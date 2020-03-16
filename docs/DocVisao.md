@@ -6,16 +6,16 @@
 
 ### **CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO**
 
-**Jaine de Senna Santos**  
-**José Geraldo de Medeiros Júnior**  
-**José Rubens de Oliveira Júnior**  
-**Maria das Graças Dias Amorim**  
-**Paulo Vitor de Medeiros Brito**  
+**Jaine de Senna Santos**
+**José Geraldo de Medeiros Júnior**
+**José Rubens de Oliveira Júnior**
+**Maria das Graças Dias Amorim**
+**Paulo Vitor de Medeiros Brito**
 **Pedro Jonas da Silva Medeiros**
 
 ## **Coders Movies: Modelo Conceitual e Modelo de Dados**
 
-**Caicó – RN**  
+**Caicó – RN**
 **2020**
 
 # Documento de Visão
@@ -31,28 +31,28 @@ Com isso, o sistema fará uso da API do Internet Movie Database (IMDB) para pega
 
 ## Lista de Requisitos Funcionais
 
-- CRUD de usuários pelo administrador;
-- Login de usuário;
-- Usuário pode criar uma conta;
-- Usuário pode alterar seus dados;
-- Usuário pode selecionar uma foto para seu perfil;
-- Usuário terá uma página de perfil contendo informações relevantes;
-- Usuário poderá adicionar filmes e séries aos favoritos;
-- Usuário poderá criar suas próprias playlists e colocar seus filmes e séries dentro da playlist;
-- Usuário poderá selecionar que filme assistiu e qual filme deseja assistir;
-- Usuário poderá comentar na página de filmes;
-- Usuário poderá pesquisar por filmes e acessar uma página contendo informações relevantes sobre o filme;
-- Usuário poderá recomendar filmes para outro usuário;
-- O sistema contará com recomendações de filmes para os usuários baseado em suas escolhas;
-- O usuário poderá selecionar quais temporadas das séries já assistiu;
-- Usuário poderá navegar da página do filme até o sistema de streaming que fornece o filme.
+- RF001. CRUD de usuários pelo administrador;
+- RF002. Login de usuário;
+- RF003. Usuário pode criar uma conta;
+- RF004. Usuário pode alterar seus dados;
+- RF005. Usuário pode selecionar uma foto para seu perfil;
+- RF006. Usuário terá uma página de perfil contendo informações relevantes;
+- RF007. Usuário poderá adicionar filmes e séries aos favoritos;
+- RF008. Usuário poderá criar suas próprias playlists e colocar seus filmes e séries dentro da playlist;
+- RF009. Usuário poderá selecionar que filme assistiu e qual filme deseja assistir;
+- RF010. Usuário poderá comentar na página de filmes;
+- RF011. Usuário poderá pesquisar por filmes e acessar uma página contendo informações relevantes sobre o filme;
+- RF012. Usuário poderá recomendar filmes para outro usuário;
+- RF013. O sistema contará com recomendações de filmes para os usuários baseado em suas escolhas;
+- RF014. O usuário poderá selecionar quais temporadas das séries já assistiu;
+- RF015. Usuário poderá navegar da página do filme até o sistema de streaming que fornece o filme.
 
 ## Lista de Requisitos Não-Funcionais
-- Utilizando de API externa;
-- O sistema será desenvolvido na linguagem de programação JavaScript com os frameworks Node.js e Vue.js;
-- O sistema deverá rodar no browser (aplicação web);
-- O software terá uma interface de fácil navegação, onde os usuários poderão utilizá-lo sem muitas dificuldades;
-- O Banco de Dados utilizado deverá ser relacional, mais especificamente PostgreeSQL.
+- RNF01. Utilizando de API externa;
+- RNF02. O sistema será desenvolvido na linguagem de programação JavaScript com os frameworks Node.js e Vue.js;
+- RNF03. O sistema deverá rodar no browser (aplicação web);
+- RNF04. O software terá uma interface de fácil navegação, onde os usuários poderão utilizá-lo sem muitas dificuldades;
+- RNF05. O Banco de Dados utilizado deverá ser relacional, mais especificamente PostgreeSQL.
 
 ## Perfis de Usuários
 São dois os tipos de usuários do Coders Movies:
