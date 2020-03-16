@@ -47,7 +47,7 @@ class UserController {
       })
     }
 
-    Object.assign(req.body, { user_type: 'common' })
+    Object.assign(req.body, { user_type: 'common', is_active: true })
 
     const { id, name, email, username } = await User.create(req.body)
 
@@ -75,7 +75,7 @@ class UserController {
       return res.status(400).json({ error: 'Dados inválidos' })
     }
 
-    const { email, oldPassword, username, user_type } = req.body
+    const { email, oldPassword, username, user_type, is_active } = req.body
 
     const user = await User.findByPk(req.userId)
 
@@ -106,6 +106,12 @@ class UserController {
     if (user_type) {
       return res.status(401).json({
         error: 'Você não tem permissões para alterar o tipo de usuário.',
+      })
+    }
+
+    if (is_active) {
+      return res.status(401).json({
+        error: 'Você não tem permissões para tornar um usuário inativo.',
       })
     }
 

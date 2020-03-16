@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken'
 
 import { promisify } from 'util'
+import User from '../models/User'
 
 import authConfig from '../../config/auth'
 
@@ -18,8 +19,16 @@ export default async (req, res, next) => {
 
     req.userId = decoded.id
 
+    const user = await User.findByPk(req.userId)
+
+    if (!user.is_active) {
+      throw new Error(
+        'Você não possui permissões para acessar essa funcionalidade'
+      )
+    }
+
     return next()
   } catch (err) {
-    return res.status(401).json({ error: 'Token inválido' })
+    return res.status(401).json({ error: err.message })
   }
 }

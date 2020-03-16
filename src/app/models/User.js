@@ -10,6 +10,7 @@ class User extends Model {
         username: Sequelize.STRING,
         birth_date: Sequelize.DATE,
         user_type: Sequelize.STRING,
+        is_active: Sequelize.BOOLEAN,
         password_hash: Sequelize.STRING,
         password: Sequelize.VIRTUAL,
       },
