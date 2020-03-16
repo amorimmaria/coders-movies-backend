@@ -6,16 +6,16 @@
 
 ### **CURSO DE BACHARELADO EM SISTEMAS DE INFORMAÇÃO**
 
-**Jaine de Senna Santos**
-**José Geraldo de Medeiros Júnior**
-**José Rubens de Oliveira Júnior**
-**Maria das Graças Dias Amorim**
-**Paulo Vitor de Medeiros Brito**
-**Pedro Jonas da Silva Medeiros**
+**Jaine de Senna Santos**  
+**José Geraldo de Medeiros Júnior**  
+**José Rubens de Oliveira Júnior**  
+**Maria das Graças Dias Amorim**  
+**Paulo Vitor de Medeiros Brito**  
+**Pedro Jonas da Silva Medeiros**  
 
 ## **Coders Movies: Modelo Conceitual e Modelo de Dados**
 
-**Caicó – RN**
+**Caicó – RN**  
 **2020**
 
 # Documento de Visão
