@@ -63,10 +63,10 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 | Código | Descrição |
 | ------ | --------- |
-|**TA02.01**| |
-|**TA02.02**| |
-|**TA02.03**| |
-|**TA02.04**| |
+|**TA01.01**| |
+|**TA01.02**| |
+|**TA01.03**| |
+|**TA01.04**| |
 
 
 <div id='us02'/>
@@ -87,21 +87,29 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 | Código | Descrição |
 | ------ | --------- |
-|**TA01.01**|  |
-|**TA01.02**|  |
+|**TA02.01**|  |
+|**TA02.02**|  |
 
 <div id='us03'/>
 
-### **User Story US03 - **
+### **User Story US03 - Mídia**
 
 |                    |      |
 | ------------------ | ---- |
-|**Descrição**|  |
-|**Requisitos envolvidos**|  |
-|**Prioridade**|  |
-|**Estimativa**|  |
+|**Descrição**| Mídia representa uma página que tem um link para o filme ou série e informações relevante sobre o mesmo. Um usuário pode adicionar uma mídia aos favoritos, a uma playlist, poderá dar opiniões comentando sobre a mesma. Caso um usuário já tenha assistido tal filme ele poderá dizer que já o assistiu, além de poder recomendar o mesmo. |
+|**Requisitos envolvidos**| RF07, RF09, RF10, RF11, RF12, RF14, RF15 |
+|**Prioridade**| Essencial |
+|**Estimativa**| 24h |
 |**Tempo Gasto (real):**| |
-|**Tamanho Funcional**|  |
+|**Tamanho Funcional**| 12 PF |
+
+### **Testes de Aceitação (TA)**
+
+| Código | Descrição |
+| ------ | --------- |
+|**TA03.01**| Ao comentar na Mídia, o usuário poderá ver seu comentário após enviá-lo. |
+|**TA03.02**| Caso já tenha feito um comentário naquela mídia, ao clicar em “comentar” será criado um novo comentário. |
+|**TA03.03**| Ao dizer que ja assistiu um filme ou série, o usuario poderá confirmar isso através de um sinal como uma bolinha verde ao lado do título, por exemplo. |
 
 <div id='us04'/>
 
@@ -120,18 +128,10 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 | Código | Descrição |
 | ------ | --------- |
-|**TA01.01**|  |
-|**TA01.02**|  |
-
-
-### **Testes de Aceitação (TA)**
-
-| Código | Descrição |
-| ------ | --------- |
-|**TA01.01**| |
-|**TA01.02**| |
-|**TA01.03**| |
-|**TA01.04**| |
+|**TA04.01**| |
+|**TA04.02**| |
+|**TA04.03**| |
+|**TA04.04**| |
 
 
 <div id='referencias'/>
