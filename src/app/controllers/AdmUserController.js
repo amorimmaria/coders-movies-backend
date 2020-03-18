@@ -43,7 +43,7 @@ class AdmUserController {
         'username',
         'is_active',
       ],
-      order: [['is_active', 'DESC'], 'name'],
+      order: [['is_active', 'DESC'], 'username'],
       limit: 20,
       offset: (page - 1) * 20,
       where: { username: { [Op.substring]: user } },
