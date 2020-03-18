@@ -85,8 +85,8 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 | Código | Descrição |
 | ------ | --------- |
-|**TA01.01**| Na sua página pessoal, o usuário poderá ver uma espécie de alavanca, onde ao ativá-la e salvar sua página, ele estaria tornando-a pública. |
-|**TA01.02**| Após adicionar algo errado na página, o usuário poderá escondê-la ou apagá-la com um pressionar de um botão. |
+|**TA01.01**|  |
+|**TA01.02**|  |
 
 <div id='us03'/>
 
@@ -101,6 +101,26 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 |**Tempo Gasto (real):**| |
 |**Tamanho Funcional**|  |
 
+<div id='us04'/>
+
+### **User Story US04 - Playlists**
+
+|                    |      |
+| ------------------ | ---- |
+|**Descrição**| O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, password, avatarURL e WatchedMovies. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. |
+|**Requisitos envolvidos**| RF02, RF03, RF04, RF05, RNF03 |
+|**Prioridade**| Essencial |
+|**Estimativa**| 14h |
+|**Tempo Gasto (real):**| |
+|**Tamanho Funcional**| 10 PF |
+
+### **Testes de Aceitação (TA)**
+
+| Código | Descrição |
+| ------ | --------- |
+|**TA01.01**|  |
+|**TA01.02**|  |
+
 
 ### **Testes de Aceitação (TA)**
 
@@ -110,8 +130,6 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 |**TA01.02**| |
 |**TA01.03**| |
 |**TA01.04**| |
-
-<div id='us02'/>
 
 
 <div id='referencias'/>
