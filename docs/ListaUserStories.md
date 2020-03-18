@@ -50,12 +50,21 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 |                    |      |
 | ------------------ | ---- |
-|**Descrição**| O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, password, avatarURL e WatchedMovies. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. |
-|**Requisitos envolvidos**| RF02, RF03, RF04, RF05, RNF03 |
+|**Descrição**| O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, username, data de nascimento, tipo de usuário, status, password, avatarURL e WatchedMovies. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. Para o usuário administrador do sistema, ele precisa de permissão de outro administrador em mesmo nível ou o superadmin. A superadmin não pode ser excluido, devendo ser criado junto com banco de dados. Os usuários administrador podem alterar o nível de permissão de um usuário comum ou de outro adminstrador. |
+|**Requisitos envolvidos**| RF01, RF02, RF03, RF04, RF05, RNF03 |
 |**Prioridade**| Essencial |
 |**Estimativa**| 14h |
 |**Tempo Gasto (real):**| |
-|**Tamanho Funcional**| 10 PF |
+|**Tamanho Funcional**| 18 PF |
+
+### **Testes de Aceitação (TA)**
+
+| Código | Descrição |
+| ------ | --------- |
+|**TA01.01**| |
+|**TA01.02**| |
+|**TA01.03**| |
+|**TA01.04**| |
 
 <div id='us02'/>
 
@@ -76,7 +85,7 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 | ------ | --------- |
 |**TA02.01**| |
 |**TA02.02**| |
-|**TA03.03**| |
-|**TA04.04**| |
+|**TA02.03**| |
+|**TA02.04**| |
 
 <div id='referencias'/>
