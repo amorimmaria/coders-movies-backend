@@ -1,12 +1,37 @@
 import * as Yup from 'yup'
+import { Op } from 'sequelize'
 import User from '../models/User'
 
 class AdmUserController {
+  async show(req, res) {
+    const user = await User.findByPk(req.params.id)
+
+    const {
+      name,
+      email,
+      username,
+      user_type,
+      is_active,
+      birth_date,
+      created_at,
+    } = user
+
+    return res.json({
+      name,
+      email,
+      username,
+      user_type,
+      is_active,
+      birth_date,
+      created_at,
+    })
+  }
+
   async index(req, res) {
     /*
      * list with pagination
      */
-    const { page } = req.query
+    const { page, user } = req.query
 
     const users = await User.findAll({
       attributes: [
@@ -21,9 +46,28 @@ class AdmUserController {
       order: [['is_active', 'DESC'], 'name'],
       limit: 20,
       offset: (page - 1) * 20,
+      where: { username: { [Op.substring]: user } },
     })
 
     return res.json(users)
+  }
+
+  async indexCount(req, res) {
+    const { user } = req.query
+
+    const usersCount = await User.count({
+      where: { username: { [Op.substring]: user } },
+    })
+
+    let pages = 0
+
+    if (usersCount % 20 === 0) {
+      pages = usersCount / 20
+    } else {
+      pages = Math.floor(usersCount / 20) + 1
+    }
+
+    return res.json(pages)
   }
 
   async store(req, res) {
