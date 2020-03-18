@@ -46,11 +46,37 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 <div id='us'/>
 
-
 <div id='us01'/>
 
+|                    |      |
+| ------------------ | ---- |
+|**Descrição**| O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, password, avatarURL e WatchedMovies. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. |
+|**Requisitos envolvidos**| RF02, RF03, RF04, RF05, RNF03 |
+|**Prioridade**| Essencial |
+|**Estimativa**| 14h |
+|**Tempo Gasto (real):**| |
+|**Tamanho Funcional**| 10 PF |
 
 <div id='us02'/>
 
+### **User Story US02 - Manter Usuário**
+
+|                    |      |
+| ------------------ | ---- |
+|**Descrição**|  |
+|**Requisitos envolvidos**| |
+|**Prioridade**| |
+|**Estimativa**| |
+|**Tempo Gasto (real):**| |
+|**Tamanho Funcional**| |
+
+### **Testes de Aceitação (TA)**
+
+| Código | Descrição |
+| ------ | --------- |
+|**TA02.01**| |
+|**TA02.02**| |
+|**TA03.03**| |
+|**TA04.04**| |
 
 <div id='referencias'/>
