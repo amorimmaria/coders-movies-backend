@@ -48,6 +48,8 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 <div id='us01'/>
 
+### **User Story US01 - Manter Usuário**
+
 |                    |      |
 | ------------------ | ---- |
 |**Descrição**| O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, username, data de nascimento, tipo de usuário, status, password, avatarURL e WatchedMovies. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. Para o usuário administrador do sistema, ele precisa de permissão de outro administrador em mesmo nível ou o superadmin. A superadmin não pode ser excluido, devendo ser criado junto com banco de dados. Os usuários administrador podem alterar o nível de permissão de um usuário comum ou de outro adminstrador. |
@@ -61,6 +63,49 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 | Código | Descrição |
 | ------ | --------- |
+|**TA02.01**| |
+|**TA02.02**| |
+|**TA02.03**| |
+|**TA02.04**| |
+
+
+<div id='us02'/>
+
+### **User Story US02 - Página de Perfil**
+
+| ------------------ | ---- |
+|**Descrição**| O sistema fornecerá ao usuário uma página pessoal contendo algumas informações sobre o usuário, tais como comentários, filmes favoritos, playlists, dentre outros. O usuário deverá poderá tornar algumas informações públicas ou privadas, além da própria página. |
+|**Requisitos envolvidos**| RF06 |
+|**Prioridade**| Desejável |
+|**Estimativa**| 8h |
+|**Tempo Gasto (real):**| |
+|**Tamanho Funcional**| 6PF |
+
+### **Testes de Aceitação (TA)**
+
+| Código | Descrição |
+| ------ | --------- |
+|**TA01.01**| Na sua página pessoal, o usuário poderá ver uma espécie de alavanca, onde ao ativá-la e salvar sua página, ele estaria tornando-a pública. |
+|**TA01.02**| Após adicionar algo errado na página, o usuário poderá escondê-la ou apagá-la com um pressionar de um botão. |
+
+<div id='us03'/>
+
+### **User Story US03 - **
+
+|                    |      |
+| ------------------ | ---- |
+|**Descrição**|  |
+|**Requisitos envolvidos**|  |
+|**Prioridade**|  |
+|**Estimativa**|  |
+|**Tempo Gasto (real):**| |
+|**Tamanho Funcional**|  |
+
+
+### **Testes de Aceitação (TA)**
+
+| Código | Descrição |
+| ------ | --------- |
 |**TA01.01**| |
 |**TA01.02**| |
 |**TA01.03**| |
@@ -68,24 +113,5 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 <div id='us02'/>
 
-### **User Story US02 - Manter Usuário**
-
-|                    |      |
-| ------------------ | ---- |
-|**Descrição**|  |
-|**Requisitos envolvidos**| |
-|**Prioridade**| |
-|**Estimativa**| |
-|**Tempo Gasto (real):**| |
-|**Tamanho Funcional**| |
-
-### **Testes de Aceitação (TA)**
-
-| Código | Descrição |
-| ------ | --------- |
-|**TA02.01**| |
-|**TA02.02**| |
-|**TA02.03**| |
-|**TA02.04**| |
 
 <div id='referencias'/>
