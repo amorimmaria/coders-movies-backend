@@ -73,6 +73,8 @@ O presente documento mostra uma breve descrição dos passos seguidos por um usu
 
 ### **User Story US02 - Página de Perfil**
 
+
+|                    |      |
 | ------------------ | ---- |
 |**Descrição**| O sistema fornecerá ao usuário uma página pessoal contendo algumas informações sobre o usuário, tais como comentários, filmes favoritos, playlists, dentre outros. O usuário deverá poderá tornar algumas informações públicas ou privadas, além da própria página. |
 |**Requisitos envolvidos**| RF06 |
