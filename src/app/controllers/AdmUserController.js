@@ -59,6 +59,7 @@ class AdmUserController {
       where: { username: { [Op.substring]: user } },
     })
 
+    /*
     let pages = 0
 
     if (usersCount % 20 === 0) {
@@ -66,8 +67,9 @@ class AdmUserController {
     } else {
       pages = Math.floor(usersCount / 20) + 1
     }
+    */
 
-    return res.json(pages)
+    return res.json(usersCount)
   }
 
   async store(req, res) {
